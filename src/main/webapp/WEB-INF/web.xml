@@ -6,7 +6,6 @@
   	<filter-name>struts6</filter-name>
   	<filter-class>org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter</filter-class>
   </filter>
-  
   <filter-mapping>
   	<filter-name>struts6</filter-name>
   	<url-pattern>/*</url-pattern>

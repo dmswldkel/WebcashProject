@@ -10,8 +10,6 @@ import com.opensymphony.xwork2.Action;
 public class ListAction implements Action {
 	private List<DeptVo> list;
 	
-	
-	
 	public List<DeptVo> getList() {
 		return list;
 	}
@@ -19,12 +17,6 @@ public class ListAction implements Action {
 	@Override
 	public String execute() throws Exception {
 		list=new DeptDao().findAll();
-//		list=Arrays.asList(
-//				new DeptVo(1111,"test1","test"),
-//				new DeptVo(2222,"test1","test"),
-//				new DeptVo(3333,"test1","test"),
-//				new DeptVo(4444,"test1","test")
-//				);
 		return Action.SUCCESS;
 	}
 
